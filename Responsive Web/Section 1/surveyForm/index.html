@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey Form</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">3D Printing Survey</h1>
+    <p id="description">Tell us what you think about 3D printing</p>
+    <form id="survey-form">
+      <label for="name"
+        >Name<input id="name" type="text" placeholder="Name" required
+      /></label>
+      <label for="email"
+        >Email<input id="email" type="email" placeholder="Email" required
+      /></label>
+      <label for="age"
+        >Age<input
+          id="age"
+          type="number"
+          min="13"
+          max="120"
+          placeholder="Age"
+          reqired
+      /></label>
+      <label for="dropdown"
+        >Years of experience
+        <select id="dropdown">
+          <option value="1">0-2 years</option>
+          <option value="2">2-5 years</option>
+          <option value="3">5-10 years</option>
+          <option value="4">10+ years</option>
+        </select>
+      </label>
+      <label for="printingType"><input id="printingType" /></label>
+      <label for="printerModel"
+        >What printer models have you used?<input id="printerModel" /><input
+      /></label>
+      <label for="favoritePrint"
+        >What is your favorite print so far?<input id="favoritePrint"
+      /></label>
+      <label for="challengingPart"
+        >What part of 3D printing do you find the most challenging?<input
+          id="challengingPart"
+      /></label>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
